@@ -16,7 +16,13 @@ public class LanitPage {
     private SelenideElement openCareer = $x("//*[contains(@class, 'menu__list')]//a[text()='Карьера']");
     private SelenideElement inputQA = $x("//*[contains(@class, 'Textfield_textfield__ac936')]");
     private SelenideElement checkOutResponseQA = $x("//p[contains(text(), 'Увы, по вашему запросу ничего не нашлось.')]");
+    private SelenideElement openVkPage = $x("//*[contains(@class, 'icon_vk')]");
+    private SelenideElement checkOutPageVk = $x("//h1[text()='ЛАНИТ']");
+    private SelenideElement searchIcon = $x("//*[contains(@class, 'search_header')]//*[contains(@class, 'search__icon')]");
 
+    public SelenideElement searchIcon(){return searchIcon;}
+    public SelenideElement checkOutPageVk(){return checkOutPageVk;}
+    public SelenideElement openVkPage(){return openVkPage;}
     public SelenideElement checkOutResponseQA(){return checkOutResponseQA;}
     public SelenideElement inputQA(){return inputQA;}
     public SelenideElement openCareer(){return openCareer;}

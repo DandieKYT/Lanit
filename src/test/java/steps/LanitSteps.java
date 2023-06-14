@@ -12,7 +12,22 @@ import static com.codeborne.selenide.Selenide.switchTo;
 public class LanitSteps {
     LanitPage lanitPage = new LanitPage();
 
+    @Step("Нажатие на иконку Поиска")
+    public void searchIcon(){
+        lanitPage.searchIcon().click();
+    }
 
+    @Step("Проверка заголовка в ВК")
+    public void checkOutPageVk(){
+        lanitPage.checkOutPageVk().shouldBe(Condition.text("ЛАНИТ"));
+        Selenide.closeWindow();
+        switchTo().window(0);
+    }
+    @Step("Открытие страницы в ВК")
+    public void openVkPage(){
+        lanitPage.openVkPage().click();
+        switchTo().window(1);
+    }
     @Step("Проверка результатата на запрос - QA")
     public void checkOutResponseQA(){
         lanitPage.checkOutResponseQA().shouldNotBe(Condition.visible);

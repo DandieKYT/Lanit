@@ -34,12 +34,9 @@ public class LanitTest extends TestBase {
     }
         @Test
     public void vkGroup(){
-            open("https://www.lanit.ru/");
-            $x("//*[contains(@class, 'icon_vk')]").click();
-            switchTo().window(1);
-            $x("//h1[text()='ЛАНИТ']").shouldBe(Condition.text("ЛАНИТ"));
-            Selenide.closeWindow();
-            switchTo().window(0);
+        lanitSteps.openPage();
+        lanitSteps.openVkPage();
+        lanitSteps.checkOutPageVk();
         }
     @CsvSource(value = {
             "Деятельность,         НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ",
@@ -57,7 +54,7 @@ public class LanitTest extends TestBase {
     @Test
     public void searchTest(){
         lanitSteps.openPage();
-        $x("//*[contains(@class, 'search_header')]//*[contains(@class, 'search__icon')]").click();
+        lanitSteps.searchIcon();
         $x("//*[@name='q']").setValue("QA").pressEnter();
         $x("//font[contains(text(), 'К сожалению, на ваш поисковый запрос ничего не найдено.')]").shouldNotBe(Condition.visible);
     }
