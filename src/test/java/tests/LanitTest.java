@@ -28,15 +28,9 @@ public class LanitTest extends TestBase {
     @Test
     public void career(){
         lanitSteps.openPage();
-        $x("//*[contains(@class, 'menu__list')]//a[text()='Карьера']").click();
-        switchTo().window(1);
-        $x("//*[contains(@class, 'Textfield_textfield__ac936')]").setValue("QA").pressEnter();
-        switchTo().window(2);
-        $x("//p[contains(text(), 'Увы, по вашему запросу ничего не нашлось.')]").shouldNotBe(Condition.visible);
-        Selenide.closeWindow();
-        switchTo().window(1);
-        Selenide.closeWindow();
-        switchTo().window(0);
+        lanitSteps.openCareer();
+        lanitSteps.inputQA();
+        lanitSteps.checkOutResponseQA();
     }
         @Test
     public void vkGroup(){
