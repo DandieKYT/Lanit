@@ -27,7 +27,7 @@ public class LanitTest extends TestBase {
 
     @Test
     public void career(){
-        open("https://www.lanit.ru/");
+        lanitSteps.openPage();
         $x("//*[contains(@class, 'menu__list')]//a[text()='Карьера']").click();
         switchTo().window(1);
         $x("//*[contains(@class, 'Textfield_textfield__ac936')]").setValue("QA").pressEnter();
