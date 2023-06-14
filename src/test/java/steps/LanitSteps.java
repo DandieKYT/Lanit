@@ -11,6 +11,14 @@ import static com.codeborne.selenide.Selenide.switchTo;
 
 public class LanitSteps {
     LanitPage lanitPage = new LanitPage();
+    @Step("Проверка наличия результата")
+    public void responseSearchQA(){
+        lanitPage.responseSearchQA().shouldNotBe(Condition.visible);
+    }
+    @Step("Поиск по слову QA")
+    public void wordQA(){
+        lanitPage.wordQA().pressEnter();
+    }
 
     @Step("Нажатие на иконку Поиска")
     public void searchIcon(){

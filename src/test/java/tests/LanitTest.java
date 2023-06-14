@@ -55,7 +55,7 @@ public class LanitTest extends TestBase {
     public void searchTest(){
         lanitSteps.openPage();
         lanitSteps.searchIcon();
-        $x("//*[@name='q']").setValue("QA").pressEnter();
-        $x("//font[contains(text(), 'К сожалению, на ваш поисковый запрос ничего не найдено.')]").shouldNotBe(Condition.visible);
+        lanitSteps.wordQA();
+        lanitSteps.responseSearchQA();
     }
 }

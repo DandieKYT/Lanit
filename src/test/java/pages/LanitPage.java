@@ -19,7 +19,11 @@ public class LanitPage {
     private SelenideElement openVkPage = $x("//*[contains(@class, 'icon_vk')]");
     private SelenideElement checkOutPageVk = $x("//h1[text()='ЛАНИТ']");
     private SelenideElement searchIcon = $x("//*[contains(@class, 'search_header')]//*[contains(@class, 'search__icon')]");
+    private SelenideElement wordQA = $x("//*[@name='q']");
+    private SelenideElement responseSearchQA = $x("//font[contains(text(), 'К сожалению, на ваш поисковый запрос ничего не найдено.')]");
 
+    public SelenideElement responseSearchQA(){return responseSearchQA;}
+    public SelenideElement wordQA(){return  wordQA;}
     public SelenideElement searchIcon(){return searchIcon;}
     public SelenideElement checkOutPageVk(){return checkOutPageVk;}
     public SelenideElement openVkPage(){return openVkPage;}
