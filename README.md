@@ -46,9 +46,9 @@
  
  <a name="ImplementedСhecks"><h2>:heavy_check_mark:  Реализованные проверки:</h2></a>
  
- :clipboard: Наличие вакансии тестировщика на <a href = "https://career.astondevs.ru/">Aston </br>
+ :clipboard: Наличие вакансии тестировщика на <a href = "https://job.lanit.ru/main/index.html">Lanit </br>
  
- :speech_balloon: Открытие страницы  <a href = "https://astondevs.ru/pricing">Узнать стоимость
+ :speech_balloon: Открытие страницы<a href = "https://astondevs.ru/pricing">Узнать стоимость
   </br>
  
  :clipboard:Открытие страниц 
