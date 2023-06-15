@@ -9,9 +9,9 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void setUp() {
-//        Configuration.browser = "chrome";
-//        Configuration.browserVersion = "100.0";
-//        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
+        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
         Configuration.baseUrl = "https://www.lanit.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
