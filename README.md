@@ -46,9 +46,9 @@
  
  <a name="ImplementedСhecks"><h2>:heavy_check_mark:  Реализованные проверки:</h2></a>
  
- :clipboard: Наличие вакансии тестировщика на <a href = "https://career.astondevs.ru/">Aston </br>
+ :clipboard: Наличие вакансии тестировщика на <a href = "https://job.lanit.ru/main/index.html">Lanit </br>
  
- :speech_balloon: Открытие страницы  <a href = "https://astondevs.ru/pricing">Узнать стоимость
+ :speech_balloon: Открытие страницы<a href = "https://astondevs.ru/pricing">Узнать стоимость
   </br>
  
  :clipboard:Открытие страниц 
@@ -63,7 +63,7 @@
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
- <code><a href="https://astondevs.ru/">![This is an image](/design/icons/Screenshot_8.png)</a></code>Проект по автоматизации тестирования для <a target="_blank" href="https://astondevs.ru/">ASTON</a> — компания  разработки программного обеспечения.
+ <code><a href="https://www.lanit.ru/">![This is an image](/design/icons/Screenshot_8.png)</a></code>Проект по автоматизации тестирования для <a target="_blank" href="https://www.lanit.ru/">Lanit</a> — ведущая многопрофильная группа IT-компаний.
  :star2:
  
  <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
