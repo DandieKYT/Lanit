@@ -107,7 +107,7 @@ clean test
 <a name="Video"><h2>:movie_camera: Видео примеры прохождения тестов</h2></a>
 
 - <a name="Video1"><h3>Пример запуска тестов через selenoid</h3></a>
-    <h1><a href="https://selenoid.autotests.cloud/video/2d5ca5c333f5f2471bbcdadf532a9c73.mp4">Test suite Aston<br>
+    <h1><a href="https://selenoid.autotests.cloud/video/2d5ca5c333f5f2471bbcdadf532a9c73.mp4">Test suite Lanit<br>
   
 
 
