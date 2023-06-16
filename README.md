@@ -48,7 +48,7 @@
  
  :clipboard: Наличие вакансии тестировщика на <a href = "https://job.lanit.ru/main/index.html">Lanit </br>
  
- :speech_balloon: Открытие страницы<a href = "https://www.lanit.ru/projects/?arrFilter_pf%5BLINE_OF_BUSINESS%5D=-1&arrFilter_pf%5BINDUSTRY%5D=16424&arrFilter_pf%5BCLIENT%5D=-1&set_filter=Y">Узнать стоимость
+ :speech_balloon: Открытие страницы проекты<a href = "https://www.lanit.ru/projects/?arrFilter_pf%5BLINE_OF_BUSINESS%5D=-1&arrFilter_pf%5BINDUSTRY%5D=16424&arrFilter_pf%5BCLIENT%5D=-1&set_filter=Y">банковской отрасли
   </br>
  
  :clipboard:Открытие страниц 
