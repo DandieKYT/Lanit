@@ -15,6 +15,8 @@ import static com.codeborne.selenide.Selenide.*;
 public class LanitTest extends TestBase {
 
     LanitSteps lanitSteps = new LanitSteps();
+    @Feature("Открытие страницы Проекты")
+    @Story("Открытие страницы проекты и  просмотр проектов в банковской отрасли")
     @Test
     public void projects(){
         lanitSteps.openPage();
@@ -24,7 +26,8 @@ public class LanitTest extends TestBase {
         lanitSteps.showResult();
         lanitSteps.checkoutBankResult();
     }
-
+    @Feature("Поиск вакансии в Lanit")
+    @Story("Открытие страницы Карьера и поиск вакансии QA")
     @Test
     public void career(){
         lanitSteps.openPage();
@@ -32,6 +35,8 @@ public class LanitTest extends TestBase {
         lanitSteps.inputQA();
         lanitSteps.checkOutResponseQA();
     }
+    @Feature("ВК")
+    @Story("Открытие страницы компании в ВК")
         @Test
     public void vkGroup(){
         lanitSteps.openPage();
@@ -51,6 +56,8 @@ public class LanitTest extends TestBase {
         lanitSteps.searchByParam(param);
         lanitSteps.checkTitle(expectedText);
         }
+    @Feature("Поиск по сайту")
+    @Story("Поиск по сайту с запросом QA")
     @Test
     public void searchTest(){
         lanitSteps.openPage();
