@@ -1,12 +1,17 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import steps.LanitSteps;
 
 import java.util.Map;
 
 public class TestBase {
+
+    LanitSteps lanitSteps = new LanitSteps();
+
     @BeforeAll
     static void setUp() {
         Configuration.browser = "chrome";
@@ -24,5 +29,13 @@ public class TestBase {
         ));
 
         Configuration.browserCapabilities = capabilities;
+    }
+
+    @AfterEach
+    void attachments() {
+        lanitSteps.browserLogs();
+        lanitSteps.attachScreenshot();
+        lanitSteps.pageSource();
+        lanitSteps.addVideo();
     }
 }
