@@ -104,7 +104,8 @@ clean test
 
 <a name="Telegram"><h2>:iphone: Отчет в Telegram</h2></a>
 
-![telegramAston](https://github.com/DandieKYT/Aston/assets/75677738/657098c2-159f-481f-9b2c-0542cabeb0e6)
+![telegram](https://github.com/DandieKYT/Lanit/assets/75677738/3def35d8-1581-4b11-a19e-0c8e45b2030f)
+
 
 
 <a name="Video"><h2>:movie_camera: Видео примеры прохождения тестов</h2></a>
