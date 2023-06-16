@@ -98,7 +98,8 @@ clean test
  <a name="ManualTest"><h3>Страница с тестами в TestOps</h3></a>
     
     
-![Screenshot_5](https://github.com/DandieKYT/Aston/assets/75677738/cbed0f18-504f-442a-b302-4be347e19d37)
+
+![Screenshot_9](https://github.com/DandieKYT/Lanit/assets/75677738/c97af6e8-5639-4d45-bc06-a2fce5736937)
 
 
 
