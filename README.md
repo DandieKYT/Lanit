@@ -63,7 +63,7 @@
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
- <code><a href="https://www.lanit.ru/"></a>      ![lanit](https://github.com/DandieKYT/Lanit/assets/75677738/41c6cc17-496f-4ebe-b973-485b9b71ae60)
+ <code><a href="https://www.lanit.ru/"></a><img width="5%"![lanit](https://github.com/DandieKYT/Lanit/assets/75677738/41c6cc17-496f-4ebe-b973-485b9b71ae60)
     </code>Проект по автоматизации тестирования для <a target="_blank" href="https://www.lanit.ru/">Lanit</a> — ведущая многопрофильная группа IT-компаний.
  :star2:
  
