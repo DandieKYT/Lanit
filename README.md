@@ -63,8 +63,7 @@
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
- <code><a href="https://www.lanit.ru/"></a><img width="5%"![lanit](https://github.com/DandieKYT/Lanit/assets/75677738/41c6cc17-496f-4ebe-b973-485b9b71ae60)
-    </code>Проект по автоматизации тестирования для <a target="_blank" href="https://www.lanit.ru/">Lanit</a> — ведущая многопрофильная группа IT-компаний.
+ <code><a href="https://www.lanit.ru/"></a>![This is an image](/design/icons/JUnit5.png)</code>Проект по автоматизации тестирования для <a target="_blank" href="https://www.lanit.ru/">Lanit</a> — ведущая многопрофильная группа IT-компаний.
  :star2:
  
  <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
