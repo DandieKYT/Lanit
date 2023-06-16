@@ -5,7 +5,7 @@
 + [✍Описаниe](#Description)
 + [:heavy_check_mark:  Реализованные проверки:](#ImplementedСhecks)
 + [🎯Проект](#Project)
-+ [👷‍♂️ Сборка в Jenkins](#Build_in_Jenkins)
++ [👷‍♂️ Сборка в GitHub Actions](#Build_in_Jenkins)
 + [🖥 Запуск из терминала](#terminal)
 + [:chart_with_downwards_trend: Allure отчет](#Allure_report)
     + [Главный экран отчета](#Allure_report1)
@@ -66,9 +66,10 @@
  <code><a href="https://www.lanit.ru/">![This is an image](/design/icons/Screenshot_4.jpg)</a></code>Проект по автоматизации тестирования для <a target="_blank" href="https://www.lanit.ru/">Lanit</a> — ведущая многопрофильная группа IT-компаний.
  :star2:
  
- <a name="Build_in_Jenkins" href="https://jenkins.autotests.cloud/job/Aston/"><h2>👷‍♂️ Сборки в [Jenkins](https://jenkins.autotests.cloud/job/Aston/)<h2></a>
+ <a name="Build_in_Jenkins" href="https://github.com/DandieKYT/Lanit/actions"><h2>👷‍♂️ Сборки в [GitHub Actions](https://github.com/DandieKYT/Lanit/actions)<h2></a>
 
-![Screenshot_5](https://github.com/DandieKYT/Aston/assets/75677738/3d19fa03-801c-494d-a3c7-8ddc63e6d90b)
+![Screenshot_6](https://github.com/DandieKYT/Lanit/assets/75677738/4792be6f-63c7-4e23-8660-e3fb212f5835)
+
 
 
 <a name="terminal"><h2>:computer: Запуск из терминала</h2></a>
@@ -79,15 +80,17 @@
 clean test
 
 ```
-<a name="Allure_report"><h2>:chart_with_downwards_trend: Allure </a><a href="https://jenkins.autotests.cloud/job/Aston/4/allure/">отчет</a></h2>
+<a name="Allure_report"><h2>:chart_with_downwards_trend: Allure </a><a href="https://dandiekyt.github.io/Lanit/3/">отчет</a></h2>
 
 - <a name="Allure_report1"><h3>Главный экран отчета</h3></a>
 
-![Screenshot_6](https://github.com/DandieKYT/Aston/assets/75677738/0ceaf8e6-57f9-4a83-aa7c-c3b61411f9ff)
+![Screenshot_7](https://github.com/DandieKYT/Lanit/assets/75677738/4febe31d-d58f-4d0e-93ea-060200b6c497)
+
 
 -  <a name="Allure_report2"><h3>Страница с проведенными тестами</h3></a>
 
-![Screenshot_7](https://github.com/DandieKYT/Aston/assets/75677738/73599f5a-fb93-4207-9775-17ca0c7d4829)
+![Screenshot_8](https://github.com/DandieKYT/Lanit/assets/75677738/70028383-f420-42f8-a89b-cfd4d36a589c)
+
     
 <a name="Integration_Allure_TestOps"><h2>:bar_chart: Интеграция с Allure TestOps</h2></a>
     
@@ -109,9 +112,6 @@ clean test
 - <a name="Video1"><h3>Пример запуска тестов через selenoid</h3></a>
     <h1><a href="https://selenoid.autotests.cloud/video/2d5ca5c333f5f2471bbcdadf532a9c73.mp4">Test suite Lanit<br>
   
-
-
-
 
 https://github.com/DandieKYT/Lanit/assets/75677738/ccac7ffd-7abb-4ce7-901c-e97057c0e46a
 
