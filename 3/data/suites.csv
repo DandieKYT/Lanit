@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 16 10:09:24 GMT 2023","Fri Jun 16 10:09:46 GMT 2023","22410","","tests.LanitTest","","tests.LanitTest","activityProjects","activityProjects(String, String) [1] Деятельность, НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ",""
+"passed","Fri Jun 16 10:09:49 GMT 2023","Fri Jun 16 10:10:09 GMT 2023","19515","","tests.LanitTest","","tests.LanitTest","career","career()",""
+"passed","Fri Jun 16 10:10:09 GMT 2023","Fri Jun 16 10:10:13 GMT 2023","3926","","tests.LanitTest","","tests.LanitTest","projects","projects()",""
+"passed","Fri Jun 16 10:10:15 GMT 2023","Fri Jun 16 10:10:21 GMT 2023","5471","","tests.LanitTest","","tests.LanitTest","vkGroup","vkGroup()",""
+"passed","Fri Jun 16 10:10:13 GMT 2023","Fri Jun 16 10:10:15 GMT 2023","2699","","tests.LanitTest","","tests.LanitTest","searchTest","searchTest()",""
+"passed","Fri Jun 16 10:09:46 GMT 2023","Fri Jun 16 10:09:49 GMT 2023","3063","","tests.LanitTest","","tests.LanitTest","activityProjects","activityProjects(String, String) [2] Проекты, КЛЮЧЕВЫЕ ПРОЕКТЫ",""

@@ -1,0 +1,1 @@
+[2023-06-16T10:10:19.227Z] [WARNING] https://vk.com/lanit_life - [.WebGL-0x23ce00373f00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
