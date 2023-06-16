@@ -48,18 +48,18 @@
  
  :clipboard: Наличие вакансии тестировщика на <a href = "https://job.lanit.ru/main/index.html">Lanit </br>
  
- :speech_balloon: Открытие страницы проекты<a href = "https://www.lanit.ru/projects/?arrFilter_pf%5BLINE_OF_BUSINESS%5D=-1&arrFilter_pf%5BINDUSTRY%5D=16424&arrFilter_pf%5BCLIENT%5D=-1&set_filter=Y">банковской отрасли
+ :speech_balloon: Открытие страницы проекты в<a href = "https://www.lanit.ru/projects/?arrFilter_pf%5BLINE_OF_BUSINESS%5D=-1&arrFilter_pf%5BINDUSTRY%5D=16424&arrFilter_pf%5BCLIENT%5D=-1&set_filter=Y"> банковской отрасли
   </br>
  
  :clipboard:Открытие страниц 
- <a href = "https://astondevs.ru/industries/ecommerce">eCommerce</a>/<a href = "https://astondevs.ru/services/mobile-development">Разработка мобильных приложений</a>
+ <a href = "https://www.lanit.ru/activities/">Деятельность</a>/<a href = "https://www.lanit.ru/projects/">Проекты</a>
 </br>
 
-🔎 Открытие <a href = "https://astondevs.ru/find-developers/react-js">страницы React</a> и проверка ее
- содержимого
+🔎 Поиск на сайте Lanit <a href = "https://www.lanit.ru/search/?q=QA">по запросу "QA"</a> и проверка 
+содержимого страницы
 </br>
  
- :card_index_dividers: Проверка ответа бота на запрос
+ 🔎: Проверка страницы компании в <a href = "https://vk.com/lanit_life">ВК</a>
  </br>
  
  <a name="Project"><h2>Проект</h2></a>
