@@ -1,16 +1,27 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import help.Attachment;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import steps.LanitSteps;
+import pages.*;
+
 
 import java.util.Map;
 
-public class TestBase {
+import static io.qameta.allure.Allure.step;
 
-    LanitSteps lanitSteps = new LanitSteps();
+public class TestBase {
+    StartTest startTest = new StartTest();
+    Attachment attachment = new Attachment();
+    ProjectPage projectPage = new ProjectPage();
+    CareerPage careerPage = new CareerPage();
+    VkPage vkPage = new VkPage();
+    ActivityProjectsPage activityProjectsPage = new ActivityProjectsPage();
+    SearchPage searchPage = new SearchPage();
+
 
     @BeforeAll
     static void setUp() {
@@ -33,9 +44,17 @@ public class TestBase {
 
     @AfterEach
     void attachments() {
-        lanitSteps.browserLogs();
-        lanitSteps.attachScreenshot();
-        lanitSteps.pageSource();
-        lanitSteps.addVideo();
+        attachment.browserLogs();
+        attachment.attachScreenshot();
+        attachment.pageSource();
+        attachment.addVideo();
+    }
+    public class StartTest{
+        public StartTest openPage(){
+            step("Открытие сайта",() -> {
+                Selenide.open("https://www.lanit.ru/");
+            });
+            return this;
+        }
     }
 }
