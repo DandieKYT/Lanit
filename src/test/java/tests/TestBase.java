@@ -41,10 +41,10 @@ public class TestBase {
 
     @AfterEach
     void attachments() {
-        Attachment.browserLogs();
+        attachment.browserLogs();
         attachment.attachScreenshot();
-        Attachment.pageSource();
-        Attachment.addVideo();
+        attachment.pageSource();
+        attachment.addVideo();
     }
 
     public class StartTest {
