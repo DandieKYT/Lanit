@@ -4,6 +4,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 
+
 public class CareerTest extends TestBase {
     @Feature("Поиск вакансии в Lanit")
     @Story("Открытие страницы Карьера и поиск вакансии QA")
