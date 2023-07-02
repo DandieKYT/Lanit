@@ -1,47 +1,41 @@
 package tests;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import steps.LanitSteps;
 
-import static com.codeborne.selenide.Selenide.*;
+public class LanitTestSuite extends TestBase {
 
-public class LanitTest extends TestBase {
-
-    LanitSteps lanitSteps = new LanitSteps();
     @Feature("Открытие страницы Проекты")
     @Story("Открытие страницы проекты и  просмотр проектов в банковской отрасли")
     @Test
     public void projects(){
-        lanitSteps.openPage();
-        lanitSteps.openProject();
-        lanitSteps.openIndustry();
-        lanitSteps.bankOption();
-        lanitSteps.showResult();
-        lanitSteps.checkoutBankResult();
+        startTest.openPage();
+        projectPage.openProject();
+        projectPage.openIndustry();
+        projectPage.bankOption();
+        projectPage.showResult();
+        projectPage.checkoutBankResult();
     }
     @Feature("Поиск вакансии в Lanit")
     @Story("Открытие страницы Карьера и поиск вакансии QA")
     @Test
     public void career(){
-        lanitSteps.openPage();
-        lanitSteps.openCareer();
-        lanitSteps.inputQA();
-        lanitSteps.checkOutResponseQA();
+        startTest.openPage();
+        careerPage.openCareer();
+        careerPage.inputQA();
+        careerPage.checkOutResponseQA();
     }
     @Feature("ВК")
     @Story("Открытие страницы компании в ВК")
         @Test
     public void vkGroup(){
-        lanitSteps.openPage();
-        lanitSteps.openVkPage();
-        lanitSteps.checkOutPageVk();
+        startTest.openPage();
+        vkPage.openVkPage();
+        vkPage.checkOutPageVk();
         }
     @CsvSource(value = {
             "Деятельность,         НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ",
@@ -52,17 +46,17 @@ public class LanitTest extends TestBase {
     @Story("Открытие страниц  НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ и КЛЮЧЕВЫЕ ПРОЕКТЫ")
     @ParameterizedTest
     public void activityProjects(String param, String expectedText){
-        lanitSteps.openPage();
-        lanitSteps.searchByParam(param);
-        lanitSteps.checkTitle(expectedText);
+        startTest.openPage();
+        activityProjectsPage.searchByParam(param);
+        activityProjectsPage.checkTitle(expectedText);
         }
     @Feature("Поиск по сайту")
     @Story("Поиск по сайту с запросом QA")
     @Test
     public void searchTest(){
-        lanitSteps.openPage();
-        lanitSteps.searchIcon();
-        lanitSteps.wordQA();
-        lanitSteps.responseSearchQA();
+        startTest.openPage();
+        searchPage.searchIcon();
+        searchPage.wordQA();
+        searchPage.responseSearchQA();
     }
 }
