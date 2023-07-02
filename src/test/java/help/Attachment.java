@@ -17,12 +17,6 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attachment {
-    @Step("Скриншот теста")
-    public void attachScreenshot(int number) {
-        $(withText("#" + number)).should(Condition.visible);
-        attachScreenshot();
-    }
-
     @Step("Page Source")
     @io.qameta.allure.Attachment(value = "Page Source", type = "text/plain")
     public static byte[] pageSource() {
@@ -35,23 +29,13 @@ public class Attachment {
     }
 
     public static void browserLogs() {
-        attachAsText(
-                "Browser console log",
-                String.join("\n", Selenide.getWebDriverLogs(BROWSER))
-        );
-    }
-
-    @io.qameta.allure.Attachment(value = "Скриншот", type = "image/png", fileExtension = "png")
-    public byte[] attachScreenshot() {
-        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
+        attachAsText("Browser console log", String.join("\n", Selenide.getWebDriverLogs(BROWSER)));
     }
 
     @Step("Получение записи видео теста")
     @io.qameta.allure.Attachment(value = "Video", type = "text/html", fileExtension = ".html")
     public static String addVideo() {
-        return "<html><body><video width='100%' height='100%' controls autoplay><source src ='"
-                + getVideoUrl()
-                + "' type='video/mp4'></video></body></html>";
+        return "<html><body><video width='100%' height='100%' controls autoplay><source src ='" + getVideoUrl() + "' type='video/mp4'></video></body></html>";
 
     }
 
@@ -63,6 +47,17 @@ public class Attachment {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Step("Скриншот теста")
+    public void attachScreenshot(int number) {
+        $(withText("#" + number)).should(Condition.visible);
+        attachScreenshot();
+    }
+
+    @io.qameta.allure.Attachment(value = "Скриншот", type = "image/png", fileExtension = "png")
+    public byte[] attachScreenshot() {
+        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
 }

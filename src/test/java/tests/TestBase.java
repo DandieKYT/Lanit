@@ -8,7 +8,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.*;
 
-
 import java.util.Map;
 
 import static io.qameta.allure.Allure.step;
@@ -33,9 +32,7 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true
 
         ));
 
@@ -44,14 +41,15 @@ public class TestBase {
 
     @AfterEach
     void attachments() {
-        attachment.browserLogs();
+        Attachment.browserLogs();
         attachment.attachScreenshot();
-        attachment.pageSource();
-        attachment.addVideo();
+        Attachment.pageSource();
+        Attachment.addVideo();
     }
-    public class StartTest{
-        public StartTest openPage(){
-            step("Открытие сайта",() -> {
+
+    public class StartTest {
+        public StartTest openPage() {
+            step("Открытие сайта", () -> {
                 Selenide.open("https://www.lanit.ru/");
             });
             return this;
