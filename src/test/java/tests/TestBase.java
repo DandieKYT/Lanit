@@ -27,7 +27,7 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
         Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
-        Configuration.baseUrl = "https://www.lanit.ru/";
+        Configuration.baseUrl = "https://www.lanit.ru";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
 
@@ -50,7 +50,7 @@ public class TestBase {
     public class StartTest {
         public StartTest openPage() {
             step("Открытие сайта", () -> {
-                Selenide.open("https://www.lanit.ru/");
+                Selenide.open("/");
             });
             return this;
         }
