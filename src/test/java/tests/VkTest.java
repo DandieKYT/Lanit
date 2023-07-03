@@ -12,7 +12,7 @@ public class VkTest extends TestBase {
     @Story("Открытие страницы компании в ВК")
     @Test
     public void vkGroup() {
-        startTest.openPage();
+        basePage.openPage();
         vkPage.openVkPage();
         vkPage.checkOutPageVk();
     }

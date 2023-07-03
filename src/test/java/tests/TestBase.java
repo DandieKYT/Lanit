@@ -13,7 +13,7 @@ import java.util.Map;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-    StartTest startTest = new StartTest();
+    BasePage basePage = new BasePage();
     Attachment attachment = new Attachment();
     ProjectPage projectPage = new ProjectPage();
     CareerPage careerPage = new CareerPage();
@@ -46,13 +46,5 @@ public class TestBase {
         attachment.pageSource();
         attachment.addVideo();
     }
-
-    public class StartTest {
-        public StartTest openPage() {
-            step("Открытие сайта", () -> {
-                Selenide.open("/");
-            });
-            return this;
-        }
-    }
 }
+

@@ -12,7 +12,7 @@ public class SearchTest extends TestBase {
     @Story("Поиск по сайту с запросом QA")
     @Test
     public void searchTest() {
-        startTest.openPage();
+        basePage.openPage();
         searchPage.searchIcon();
         searchPage.wordQA();
         searchPage.responseSearchQA();

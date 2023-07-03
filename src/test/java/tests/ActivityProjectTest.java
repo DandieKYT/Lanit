@@ -19,7 +19,7 @@ public class ActivityProjectTest extends TestBase {
     @Story("Открытие страниц  НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ и КЛЮЧЕВЫЕ ПРОЕКТЫ")
     @ParameterizedTest
     public void activityProjects(String param, String expectedText) {
-        startTest.openPage();
+        basePage.openPage();
         activityProjectsPage.searchByParam(param);
         activityProjectsPage.checkTitle(expectedText);
     }

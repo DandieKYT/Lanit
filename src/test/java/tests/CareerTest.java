@@ -13,7 +13,7 @@ public class CareerTest extends TestBase {
     @Story("Открытие страницы Карьера и поиск вакансии QA")
     @Test
     public void career() {
-        startTest.openPage();
+        basePage.openPage();
         careerPage.openCareer();
         careerPage.inputQA();
         careerPage.checkOutResponseQA();

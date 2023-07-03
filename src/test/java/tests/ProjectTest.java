@@ -12,7 +12,7 @@ public class ProjectTest extends TestBase {
     @Story("Открытие страницы проекты и  просмотр проектов в банковской отрасли")
     @Test
     public void projects() {
-        startTest.openPage();
+        basePage.openPage();
         projectPage.openProject();
         projectPage.openIndustry();
         projectPage.bankOption();
