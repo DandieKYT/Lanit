@@ -8,13 +8,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.*;
 
-
 import java.util.Map;
 
 import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-    StartTest startTest = new StartTest();
+    BasePage basePage = new BasePage();
     Attachment attachment = new Attachment();
     ProjectPage projectPage = new ProjectPage();
     CareerPage careerPage = new CareerPage();
@@ -28,14 +27,12 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
         Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid_url", "selenoid.autotests.cloud/wd/hub");
-        Configuration.baseUrl = "https://www.lanit.ru/";
+        Configuration.baseUrl = "https://www.lanit.ru";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true
 
         ));
 
@@ -49,12 +46,5 @@ public class TestBase {
         attachment.pageSource();
         attachment.addVideo();
     }
-    public class StartTest{
-        public StartTest openPage(){
-            step("Открытие сайта",() -> {
-                Selenide.open("https://www.lanit.ru/");
-            });
-            return this;
-        }
-    }
 }
+
