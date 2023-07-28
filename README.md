@@ -52,7 +52,7 @@
   </br>
  
  :clipboard:Открытие страниц 
- <a href = "https://www.lanit.ru/activities/">Деятельность</a>/<a href = "https://www.lanit.ru/projects/">Проекты</a>
+ <a href = "https://www.lanit.ru/activities/">Бизнес-направления</a>/<a href = "https://www.lanit.ru/projects/">Проекты</a>
 </br>
 
 🔎 Поиск на сайте Lanit <a href = "https://www.lanit.ru/search/?q=QA">по запросу "QA"</a> и проверка 
