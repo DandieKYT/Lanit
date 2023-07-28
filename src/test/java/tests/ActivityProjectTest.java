@@ -11,11 +11,11 @@ public class ActivityProjectTest extends TestBase {
     @Tag("LanitTests")
     @Tag("ActivityProjectTest")
     @CsvSource(value = {
-            "Деятельность,         НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ",
+            "Бизнес-направления,         НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ",
             "Проекты,             КЛЮЧЕВЫЕ ПРОЕКТЫ",
     })
     @Owner("Кудрявцев")
-    @Feature("Деятельность/Проекты")
+    @Feature("Бизнес-направления/Проекты")
     @Story("Открытие страниц  НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ и КЛЮЧЕВЫЕ ПРОЕКТЫ")
     @ParameterizedTest
     public void activityProjects(String param, String expectedText) {
